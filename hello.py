@@ -4,9 +4,7 @@ def hello(env, start_response):
     '''
     status = '200 OK'
     headers = [('Content-Type', 'text/plain')]
-
-    for item in env.items():
-        print(item)
+    body = '\n'.join(env['QUERY_STRING'].split('&'))
 
     start_response(status, headers)
 
