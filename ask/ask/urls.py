@@ -18,11 +18,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',),
-    path('login/',),
-    path('question/<1>/',),
-    path('ask/',),
-    path('popular/',),
-    path('new/',),
-
+    path('', include('qa.urls')),
 ]
