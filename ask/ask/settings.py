@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ask',
-        'USER': 'stepic',
+        'USER': 'box',
         'PASSWORD': '',
         'HOST': '',
         'PORT': '',
